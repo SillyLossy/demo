@@ -22,7 +22,7 @@
                 </tr>
                 <tr>
                     <th>Email:</th>
-                    <td><input type="text" id="email" value="Doe" /></td>
+                    <td><input type="text" id="email" value="willie.duit@myspace.com" /></td>
                 </tr>
             </tbody>
         </table>
@@ -108,7 +108,7 @@
                         chatButton.onclick = function () {
                             var firstName = document.getElementById('first-name').value;
                             var lastName = document.getElementById('last-name').value;
-                            //var agentEmail = document.getElementById('agent-email').value;
+                            var email = document.getElementById('email').value;
 
                             // Use getConfig.setConfigProperty() for any web chat configuration property to dynamically set config values.
                             webchat.getConfig().setData({
@@ -119,7 +119,7 @@
                                 addressPostalCode: '50163-2735',
                                 addressState: 'FL',
                                 phoneNumber: '1-916-892-2045 x293',
-                                email: 'willie.duit@myspace.com',
+                                email: email,
                                 phoneType: 'Cell',
                                 customerId: 59606
                             });
